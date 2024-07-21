@@ -40,6 +40,10 @@ export class CreateReservationUseCase
 
     await this.repository.create(reservation);
 
-    await this.kafkaService.sendMessage('', reservation, '');
+    await this.kafkaService.sendMessage(
+      process.env.KAFKA_DEFAULT_TOPIC,
+      reservation,
+      restaurant.id,
+    );
   }
 }

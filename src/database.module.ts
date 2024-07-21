@@ -25,6 +25,8 @@ import { join } from 'path';
           '*.model.{ts,js}',
         ),
       ],
+      // entities: ['src/modules/**/infra/repositories/typeorm/models/*.model.ts'], // ou o caminho correto para suas entidades
+
       synchronize: true,
     }),
   ],

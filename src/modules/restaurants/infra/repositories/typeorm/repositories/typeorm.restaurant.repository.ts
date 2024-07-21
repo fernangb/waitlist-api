@@ -1,9 +1,9 @@
 import { InjectRepository } from '@nestjs/typeorm';
-import { RestaurantRepositoryInterface } from 'src/modules/Restaurants/domain/repositories/Restaurant.repository.interface';
 import { Repository } from 'typeorm';
-import { RestaurantEntity } from 'src/modules/Restaurants/domain/entities/Restaurant.entity';
 import { TypeormRestaurantMapper } from '../mappers/typeorm.restaurant.mapper';
 import { TypeormRestaurantModel } from '../models/typeorm.restaurant.model';
+import { RestaurantEntity } from '../../../../domain/entities/restaurant.entity';
+import { RestaurantRepositoryInterface } from '../../../../domain/repositories/restaurant.repository.interface';
 
 export class TypeormRestaurantRepository
   implements RestaurantRepositoryInterface

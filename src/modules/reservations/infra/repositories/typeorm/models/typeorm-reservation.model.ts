@@ -41,6 +41,6 @@ export class TypeormReservationModel {
   @UpdateDateColumn({ name: 'update_date' })
   updateDate: Date;
 
-  @Column({ name: 'end_date' })
+  @Column({ name: 'end_date', nullable: true })
   endDate: Date;
 }

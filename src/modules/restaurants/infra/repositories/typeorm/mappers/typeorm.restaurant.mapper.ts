@@ -1,4 +1,4 @@
-import { RestaurantEntity } from 'src/modules/Restaurants/domain/entities/Restaurant.entity';
+import { RestaurantEntity } from '../../../../domain/entities/restaurant.entity';
 import { TypeormRestaurantModel } from '../models/typeorm.restaurant.model';
 
 export class TypeormRestaurantMapper {
